@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "session annoying",
+  "version": "1.0",
+  "description": "Remove the annoying session limitations",
+  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "activeTab", 
+    "scripting", 
+    "tabs", 
+    "nativeMessaging",
+    "cookies"
+  ],
+  "action": {
+    "default_title": "Remove the mf*cker session",
+    "default_icon": {
+      "48": "images/cokie_active.jpg"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
